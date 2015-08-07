@@ -8,5 +8,7 @@ This is my first git in github and mainly just to check git out, so any help,inf
 About me:
 
 Name:	Garbaz
+
 From:	Germany
+
 Coding:	C, C++, Bash, (Java, Python)
