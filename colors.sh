@@ -9,7 +9,7 @@
 
 for i in {0..255}; do
 
-printf "\e[38;5;$i"m"%x\t" $i
+printf "\e[38;5;$i"m"%i\t" $i
 
 done
 

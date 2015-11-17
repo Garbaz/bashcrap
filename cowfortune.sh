@@ -6,12 +6,12 @@
 
 #!/bin/bash
 
-cows=(/usr/share/cows/*)
+cows=(/usr/share/cowsay/cows/*)
 
 f=${cows[$RANDOM % ${#cows[@]}]}
 
 f=${f#"/usr/share/cows/"}
-f=${f%".cow"}
-#echo "$f"
+#f=${f%".cow"}
+echo "$f"
 fortune | cowsay -f $f
 echo ""

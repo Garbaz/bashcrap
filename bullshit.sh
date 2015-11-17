@@ -9,6 +9,7 @@
 while true; do
 for i in $(seq 1 $(tput cols)); do
 echo -en "$(($RANDOM % 2))"
+#echo -n ""
 done
 echo ""
 done
