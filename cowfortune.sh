@@ -10,8 +10,8 @@ cows=(/usr/share/cowsay/cows/*)
 
 f=${cows[$RANDOM % ${#cows[@]}]}
 
-f=${f#"/usr/share/cows/"}
-#f=${f%".cow"}
+f=${f#"/usr/share/cowsay/cows/"}
+f=${f%".cow"}
 echo "$f"
 fortune | cowsay -f $f
 echo ""

@@ -6,11 +6,11 @@
 
 #!/bin/bash
 
-cows=/usr/share/cows/*
+cows="/usr/share/cowsay/cows/*"
 
 for f in $cows; do
 
-f=${f#"/usr/share/cows/"}
+f=${f#"/usr/share/cowsay/cows/"}
 f=${f%".cow"}
 
 cowsay -f $f "Hello I'm $f"
