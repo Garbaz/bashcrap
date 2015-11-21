@@ -1,3 +1,9 @@
+# Author: Garbaz
+# E-Mail: garbaz@t-online.de
+# Project: STDIN to random color
+# Description: This script colors each character from stdin in a random color
+# Dependencies: -
+
 #!/bin/bash
 
 trap ctrl_c INT

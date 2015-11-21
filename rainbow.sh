@@ -1,3 +1,9 @@
+# Author: Garbaz
+# E-Mail: garbaz@t-online.de
+# Project: STDIN to rainbow
+# Description: This script will color all text it gets from stdin and print it colored character wise. It isn't truly a rainbow, but rather just the terminal colors from 17 to 231.
+# Dependencies: -
+
 #!/bin/bash
 
 trap ctrl_c INT
