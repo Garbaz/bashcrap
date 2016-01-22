@@ -1,0 +1,15 @@
+#!/bin/bash
+if [ -t 1 ];then
+echo -e "\e[36m"
+sudo apt-get -y --force-yes update
+echo -e "\e[35m"
+sudo apt-get -y --force-yes upgrade
+echo -e "\e[31m"
+sudo apt-get -y --force-yes dist-upgrade
+echo -e "\e[33m"
+sudo apt-get -y --force-yes autoremove
+sudo apt-get -y --force-yes autoclean
+echo -e "\e[39m"
+else
+gksudo -S -m "\"up\" needs root privileges" 'apt-get -y --force-yes update;apt-get -y --force-yes upgrade;apt-get -y --force-yes dist-upgrade;apt-get -y --force-yes autoremove;apt-get -y --force-yes autoclean'
+fi
