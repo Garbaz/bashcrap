@@ -8,7 +8,7 @@
 
 for e in {0..65535}; do
 h=$(printf "%x" $e)
-echo -n "$h:"
-echo -en "\u$h \t"
+printf "$h:"
+printf "\u$h \t"
 done
-echo ""
+printf "\n"

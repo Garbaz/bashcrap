@@ -13,4 +13,4 @@ printf "\e[38;5;$i"m"Color: %i\n" $i
 
 done
 
-echo -e "\e[39m"
+printf "\e[39m"

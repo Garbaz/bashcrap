@@ -24,7 +24,7 @@ while read -r i; do
 			color=17
 		fi
 		printf "\e[38;5;$color""m"
-		echo -n "${i:$c:1}"
+		printf "${i:$c:1}"
 	done
 	printf "\n"
 	printf "\e[39m"

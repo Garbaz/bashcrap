@@ -7,14 +7,14 @@
 #!/bin/bash
 
 
-if [ -z $1 ];then
-echo "Gimme something to say dude!"
+if [ -z "$1" ];then
+printf "Gimme something to say dude!\n"
 else
-cows=(/usr/share/cowsay/cows/*)
+	cows=($(cowsay -l | tail -n +2))
 
-f=${cows[$RANDOM % ${#cows[@]}]}
+	f=${cows[$RANDOM % ${#cows[@]}]}
 
-f=${f#"/usr/share/cowsay/cows/"}
-f=${f%".cow"}
-cowsay -f $f "$@"
+	f=${f#"/usr/share/cowsay/cows/"}
+	f=${f%".cow"}
+	cowsay -f $f "$@"
 fi
